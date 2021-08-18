@@ -1,0 +1,22 @@
+* {
+  text-align: right;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+ul {
+  float: right;
+  text-align: left;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 7px;
+  margin-right: 20px;
+}
+
+span {
+  font-size: 120%;
+}
