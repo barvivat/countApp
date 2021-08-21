@@ -20,3 +20,20 @@ li {
 span {
   font-size: 120%;
 }
+
+.loading-indicator {
+  display: block;
+  width: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 40%;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.loading-indicator img {
+  width: 100px;
+  background-color: #fff;
+}

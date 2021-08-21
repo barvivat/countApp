@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body ng-app="CountApp">
+    <!-- Fixed position loading spinner -->
+    <loading class="loading-indicator"></loading>
+
     <h1 class="text-center ">ספירות</h1>
 
     <div class="container" ng-controller="mainController as main">
@@ -29,6 +32,8 @@
     <script src="./src/main.controller.js"></script>
     <script src="./src/itemCount.component.js"></script>
     <script src="./src/category.component.js"></script>
+    <script src="./src/spinner/loading.component.js"></script>
+    <script src="./src/spinner/loading.interceptor.js"></script>
 
 
 </body>
