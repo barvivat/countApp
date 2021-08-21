@@ -3,9 +3,9 @@
 
     angular.module('CountApp').service('counterService', counterService);
 
-    counterService.$inject = [];
+    counterService.$inject = ['$http'];
 
-    function counterService(){
+    function counterService($http){
         var service = this;
 
         service.calcSum = function(sumInput) {
@@ -20,7 +20,13 @@
         };
 
         service.getItems = function() {
-            return data;
+            return $http({
+                method: 'GET',
+                url: "https://count-app-server.herokuapp.com/items.json"
+                })
+                .then(function(response) {
+                    return response.data;
+                });
         }
 
     }

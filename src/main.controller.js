@@ -8,8 +8,9 @@
     function mainController(counterService) {
         var main = this;
         
-        main.data = counterService.getItems();
-
+        counterService.getItems().then(function(data) {
+            main.data = data;
+        });
     }
 
 }());
